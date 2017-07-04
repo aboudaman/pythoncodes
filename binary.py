@@ -6,4 +6,5 @@ while n > 0:
     n, remainder = divmod(n, 2)
     remainders.append(remainder)
 
+#Prints the converted number
 print (remainders[::-1])
