@@ -11,5 +11,5 @@ def binSearch(item, val):
         elif (item[mid] < val):
             low = mid + 1
         else:
-            return "found"
-    return "not found"
+            return "Found"
+    return "Not Found"
