@@ -1,6 +1,7 @@
 a = [12, 20, 22, 33, 44, 122, 200, 442, 4522, 55223, 55322]
 
 # Algorithm to to perform a binary search on a sorted list
+# Average time complexity is logn
 def binSearch(item, val):
     low = 0
     high = len(item) - 1
