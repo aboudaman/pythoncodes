@@ -8,4 +8,5 @@ def findSmallest(array):
             smallest = array[i]
     return smallest
 
+# output result to the screen
 print(findSmallest(arr))
