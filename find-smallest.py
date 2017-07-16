@@ -22,5 +22,5 @@ def selSort(arr):
         newSortedArray.append(arr.pop(smallVal))
     return newSortedArray
 
-
+# Output to the screen
 print(selSort(arrToSort))
