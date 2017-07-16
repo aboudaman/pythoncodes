@@ -1,3 +1,6 @@
+import time
+
+t0 = time.time()
 # Declare array to sort
 arrToSort = [2323, 4,232,44,44, 2]
 
@@ -12,8 +15,6 @@ def findSmallest(array):
             smallest = array[i]
             index = i
     return index
-
-
 # Create Selection Sort Function
 def selSort(arr):
     newSortedArray = []
@@ -22,6 +23,11 @@ def selSort(arr):
         smallVal = findSmallest(arr)
         newSortedArray.append(arr.pop(smallVal))
     return newSortedArray
+t1 = time.time()
+total = t0 + t1
 
 # Output to the screen
 print(selSort(arrToSort))
+
+# Prints total time
+print "Total Time:", total
