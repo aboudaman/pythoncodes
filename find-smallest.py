@@ -1,3 +1,4 @@
+# Declare array to sort
 arrToSort = [2323, 4,232,44,44, 2]
 
 # Function to find smallest value
