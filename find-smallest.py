@@ -1,14 +1,25 @@
-arr = [2323, 4,232,44,44, 2]
+arrToSort = [2323, 4,232,44,44, 2]
 
 # Function to find smallest value
 def findSmallest(array):
     # Assumes smallest value is first item
     smallest = array[0]
+    index = 0
     # Loops through each item in the array starting at position 1
     for i in range(1, len(array)):
         if array[i] < smallest:
             smallest = array[i]
-    return smallest
+            index = i
+    return index
 
-# output result to the screen
-print(findSmallest(arr))
+
+# Create Selection Sort
+def selSort(arr):
+    newSortedArray = []
+
+    for val in range(len(arr)):
+        smallVal = findSmallest(arr)
+        newSortedArray.append(arr.pop(smallVal))
+    return newSortedArray
+
+print(selSort(arrToSort))
