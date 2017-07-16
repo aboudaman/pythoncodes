@@ -13,7 +13,7 @@ def findSmallest(array):
     return index
 
 
-# Create Selection Sort
+# Create Selection Sort Function
 def selSort(arr):
     newSortedArray = []
 
@@ -21,5 +21,6 @@ def selSort(arr):
         smallVal = findSmallest(arr)
         newSortedArray.append(arr.pop(smallVal))
     return newSortedArray
+
 
 print(selSort(arrToSort))
