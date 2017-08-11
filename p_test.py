@@ -1,15 +1,7 @@
-my_name = "Abou"
-price = 23.445533
-print(f"{my_name}, what's up")
-print(round(price, 2))
+print("What is your name")
+name = input()
+print("How old are you")
+age = input()
 
-joke = "this is funny {}"
-print(joke.format(my_name))
-
-print("*" * 20)
-print(2 ** 4)
-a = 'boo'
-b = "cool"
-
-print(a, end=' ')
-print(b)
+print(f"Hello {name}, welcome to virtual world, so, you are {age} " \
+    "years old")
