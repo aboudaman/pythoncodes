@@ -1,7 +1,8 @@
 from queue import Queue
+import random
 
 hot_q = Queue()
-num = 7
+num = random.randrange(1, 20)
 turn = 0
 hot_q.enqueue('Abou')
 hot_q.enqueue('Paul')
