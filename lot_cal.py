@@ -11,8 +11,8 @@ def lotprob(lot_length, letter):
             else:
                 print("A number is required")
     return num_list
-alist = [20, 24, 26, 35, 49]
-blist = [12, 30, 36, 47,62]
+alist = [20, 24, 26, 35, 49, 19]
+blist = [12, 30, 36, 47,62, 9]
 clist = [11, 21, 28, 33, 45, 11]
 dlist = [1, 16, 54, 63, 69, 18]
 elist = [1, 28, 40, 45, 48, 12]
@@ -21,6 +21,7 @@ glist = [5, 32, 44, 53, 60, 9]
 hlist = [50, 51, 59, 61, 63, 4]
 ilist = [9, 40, 63, 64, 66, 17]
 jlist = [1, 2, 18, 23, 61, 9]
+jlist = [9, 15, 43, 60, 64, 4]
 
 # a = lotprob(6, 'A')
 # b = lotprob(6, 'B')
