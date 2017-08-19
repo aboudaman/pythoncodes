@@ -36,11 +36,28 @@ class UnorderedList:
                 current = current.getNext()
         return found
 
+    # Add script to remove item
+    def remove(self, item):
+        current = self.head
+        previous = None
+        found = False
+
+        while not found:
+            if current.getData() == item:
+                found = True
+            else:
+                previous = current
+                current = current.getNext()
+        if previous == None:
+            self.head = current.getNext()
+        else:
+            previous.setNext(current.getNext())
 
 
 mylist = UnorderedList()
 mylist.add(23)
 mylist.add(22)
 mylist.add(22)
+mylist.add("Hola")
 print(mylist.size())
 print(mylist.search(24))
