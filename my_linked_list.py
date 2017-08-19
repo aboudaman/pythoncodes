@@ -25,8 +25,22 @@ class UnorderedList:
             current = current.getNext()
         return count
 
+    # Add script to search for item
+    def search(self, item):
+        current = self.head
+        found = False
+        while not current == None and found == False:
+            if current.getData() ==  item:
+                found = True
+            else:
+                current = current.getNext()
+        return found
+
+
+
 mylist = UnorderedList()
 mylist.add(23)
 mylist.add(22)
 mylist.add(22)
 print(mylist.size())
+print(mylist.search(24))
