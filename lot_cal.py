@@ -22,12 +22,13 @@ hlist = [50, 51, 59, 61, 63, 4]
 ilist = [9, 40, 63, 64, 66, 17]
 jlist = [1, 2, 18, 23, 61, 9]
 jlist = [9, 15, 43, 60, 64, 4]
+klist = [17, 19, 39, 43, 68, 13]
 
 # a = lotprob(6, 'A')
 # b = lotprob(6, 'B')
 # c = lotprob(6, 'C')
 comp_list = alist + blist + clist + dlist + elist + flist + glist + hlist\
-    + ilist + jlist
+    + ilist + jlist + klist
 comp_list.sort()
 comp_set = set()
 count = 0
