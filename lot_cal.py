@@ -23,12 +23,12 @@ ilist = [9, 40, 63, 64, 66, 17]
 jlist = [1, 2, 18, 23, 61, 9]
 jlist = [9, 15, 43, 60, 64, 4]
 klist = [17, 19, 39, 43, 68, 13]
-
+llist = [6, 7, 16, 23, 26, 4]
 # a = lotprob(6, 'A')
 # b = lotprob(6, 'B')
 # c = lotprob(6, 'C')
 comp_list = alist + blist + clist + dlist + elist + flist + glist + hlist\
-    + ilist + jlist + klist
+    + ilist + jlist + klist + llist
 comp_list.sort()
 comp_set = set()
 count = 0
@@ -56,3 +56,4 @@ for lot_exclude in range(1, 70):
         comp3_set.add(lot_exclude)
         print(f"{lot_exclude}", end=" ")
 print()
+print(f"Total numbers not called {len(comp3_set)}")
